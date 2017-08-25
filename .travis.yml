@@ -32,6 +32,9 @@ android:
 before_install:
   - chmod +x gradlew
 
+install:
+  - echo y | android update sdk -u -a -t build-tools-26.0.1
+
 notifications:
   email:
     on_failure: always
